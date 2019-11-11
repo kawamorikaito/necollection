@@ -27,14 +27,7 @@ class CatController extends Controller
                                 'good'      => $catInfo['good'] 
             );
         }
-        $catlists[] = array('id'        => 1,
-                                'url'       => 'a',
-                                'color'     => 'a',
-                                'features'  => 'a',
-                                'status'    => 'a', 
-                                'image'     => 'a',
-                                'good'      => 'a' 
-            );
+        
         return view('catList', compact('catlists'));
     }
 
