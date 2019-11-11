@@ -47,7 +47,7 @@
                     <li><span style="margin-right: 58px;margin-top: 5px;margin-left:20px;">じょうたい</span>{{ $catInfo['status']}}</li>
                     <li><span style="margin-right: 72px;margin-top: 5px;margin-left:20px;">イメージ</span>{{ $catInfo['image']}}</li>
 
-                    <form action="/good/" method="POST" style="display:inline;margin: 10px 0px 0px 5px">
+                    <form action="/good" method="POST" style="display:inline;margin: 10px 0px 0px 5px">
                     {{ csrf_field() }}
                         <button type="submit" name="id" class="btn btn-default" value="{{ $catInfo['id'] }}" >
                         <img src="{{ asset('/good.jpeg') }}" style="object-fit: cover;width: 15px;height: 15px;">
