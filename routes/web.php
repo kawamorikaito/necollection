@@ -11,6 +11,7 @@
 |
 */
 
+URL::forceScheme('https');
 
 Route::post('/', 'CatController@index');
 Route::get('/', 'CatController@index');
