@@ -20,6 +20,7 @@ Route::post('/new', 'CatController@newSort');
 Route::post('/popularity', 'CatController@popularitySort');
 
 Route::post('/good', 'CatController@good');
+Route::get('/good', 'CatController@good');
 Route::post('/inputRegist', 'CatController@inputRegist');
 
 Route::post('/regist', 'CatController@regist');
