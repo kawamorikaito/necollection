@@ -57,6 +57,32 @@ ul li {
     background-position:center;
 }
 
+@media screen and (max-width: 479px) { /*スマホ*/
+    .regist-right{
+     	width: 60%;
+	}
+	.catlist{
+		width: 280px;
+	}
+	.cat-img{
+		height: 200px;
+		width: 240px;
+	}
+}
+
+@media screen and (min-width: 480px) {  /*pc*/
+    .regist-right{
+     	width: 70%;
+	}
+	.catlist{
+		width: 330px;
+	}
+	.cat-img{
+		height: 200px;
+		width: 270px;
+	}
+
+}
 	</style>
 
 	<script>

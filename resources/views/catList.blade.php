@@ -13,7 +13,7 @@
         
         <div class="panel-body" style="display: block;">
             <div  style="display: block;height: 50px;width: 100%;">
-                <div style="display: inline-block;width: 60%;">
+                <div class="regist-right" style="display: inline-block;">
                     <form action="/new" method="POST" style="display:inline;">
                     {{ csrf_field() }}
                         <button type="submit" class="btn btn-default">
@@ -39,8 +39,8 @@
             </div>
             @foreach ($catlists as $catInfo)
 
-            <div style="display: inline-block; width: 300px;border: dotted #1e366a 1px;float: left;margin: 17px;padding: 10px">
-                <img src="{{ asset($catInfo['url']) }}" style="object-fit: cover;height: 200px;width: 270px;margin: 20px 3px 35px 15px;-webkit-transform: rotate(-10deg);-moz-transform: rotate(-10deg);">
+            <div class="catlist" style="display: inline-block; border: dotted #1e366a 1px;float: left;margin: 17px;padding: 10px">
+                <img src="{{ asset($catInfo['url']) }}" class="cat-img" style="object-fit: cover;margin: 20px 3px 35px 15px;-webkit-transform: rotate(-10deg);-moz-transform: rotate(-10deg);">
                 <ul>
                     <li ><span style="margin-right: 100px; margin-left:20px;">いろ</span>{{ $catInfo['color']}}</li>
                     <li><span style="margin-right: 58px;margin-top: 5px; margin-left:20px;">とくちょう</span>{{ $catInfo['features']}}</li>
