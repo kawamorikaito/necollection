@@ -39,7 +39,7 @@
             </div>
             @foreach ($catlists as $catInfo)
 
-            <div style="display: inline-block; width: 330px;border: dotted #1e366a 1px;float: left;margin: 17px;padding: 10px">
+            <div style="display: inline-block; width: 300px;border: dotted #1e366a 1px;float: left;margin: 17px;padding: 10px">
                 <img src="{{ asset($catInfo['url']) }}" style="object-fit: cover;height: 200px;width: 270px;margin: 20px 3px 35px 15px;-webkit-transform: rotate(-10deg);-moz-transform: rotate(-10deg);">
                 <ul>
                     <li ><span style="margin-right: 100px; margin-left:20px;">いろ</span>{{ $catInfo['color']}}</li>
