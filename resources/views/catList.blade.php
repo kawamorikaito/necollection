@@ -13,7 +13,7 @@
         
         <div class="panel-body" style="display: block;">
             <div  style="display: block;height: 50px;width: 100%;">
-                <div style="display: inline-block;width: 70%;">
+                <div style="display: inline-block;width: 60%;">
                     <form action="/new" method="POST" style="display:inline;">
                     {{ csrf_field() }}
                         <button type="submit" class="btn btn-default">
@@ -32,7 +32,7 @@
                     <form action="/inputRegist" method="POST" style="display:inline;">
                     {{ csrf_field() }}
                     <button type="submit" class="btn btn-default" style="margin: 0 0 0 auto;">
-				    	<i class="fa fa-plus"></i>ネコを登録する！
+				    	<i class="fa fa-plus"></i>ネコを登録！
 					</button>
                     </form>
                 </div>
