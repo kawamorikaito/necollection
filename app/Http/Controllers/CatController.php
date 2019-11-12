@@ -15,7 +15,7 @@ class CatController extends Controller
                                      ->orderBy('id', 'desc')
                                      ->get();
         foreach ($selectlists as $catInfo) {
-            $url = "/storage/";
+            $url = "/";
             $url .=$catInfo['id'];
             $url .=".jpg";
             $catlists[] = array('id'        => $catInfo['id'],
@@ -38,7 +38,7 @@ class CatController extends Controller
                                      ->get();
 
         foreach ($selectlists as $catInfo) {
-            $url = "/storage/";
+            $url = "/";
             $url .=$catInfo['id'];
             $url .=".jpg";
             $catlists[] = array('id'        => $catInfo['id'],
