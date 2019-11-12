@@ -27,7 +27,7 @@ class CatController extends Controller
                                 'good'      => $catInfo['good'] 
             );
         }
-        
+
         return view('catList', compact('catlists'));
     }
 
@@ -60,7 +60,7 @@ class CatController extends Controller
                                     ->get();
 
         foreach ($selectlists as $catInfo) {
-            $url = "/storage/";
+            $url = "/";
             $url .=$catInfo['id'];
             $url .=".jpg";
             $catlists[] = array('id'        => $catInfo['id'],
